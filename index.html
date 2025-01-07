@@ -11,9 +11,9 @@
 
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
-<script type="module" nonce="HsgvwXMDK8FvaP1EhHHPxg==">
-import init, * as bindings from '/Tester.js';
-const wasm = await init({ module_or_path: '/Tester_bg.wasm' });
+<script type="module" nonce="ArujKrmT+iZum+Nel3I0bw==">
+import init, * as bindings from '/wasm_test-8db9ecc9107ee19e.js';
+const wasm = await init({ module_or_path: '/wasm_test-8db9ecc9107ee19e_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -25,7 +25,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
     <!-- this is the base url relative to which other urls will be constructed. trunk will insert this from the public-url option -->
     <base href="/" />
 
-    <link rel="icon" href="/favicon.ico" integrity="sha384&#x2D;jNOAE6jgE03LznIulCTVP6BH4NrTuROFjP9wj8bV1UUMJKtZAvstFpIAP3PDcFpx"/>
+    <link rel="icon" href="/favicon-f402c8741ce815ec.ico" integrity="sha384&#x2D;jNOAE6jgE03LznIulCTVP6BH4NrTuROFjP9wj8bV1UUMJKtZAvstFpIAP3PDcFpx"/>
 
 
     
@@ -127,7 +127,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             }
         }
     </style>
-<link rel="modulepreload" href="/Tester.js" crossorigin=anonymous integrity="sha384-p9xE/t8XsaD+j0PnE/4oQ9CmMLf0kPJ1wq0+Pr9O3ZXayNWl7ZPSCEfRF7jIMIma"><link rel="preload" href="/Tester_bg.wasm" crossorigin=anonymous integrity="sha384-JU8e8arXJ0oAWOY5t0828+Z79isdiX9PjsyM1n8JmS0um/2ifrtZtpNFUsFjmBzj" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/wasm_test-8db9ecc9107ee19e.js" crossorigin=anonymous integrity="sha384-MdeE0hJyCeylg2tPHuoIXP6AV3PlcdFH0dQk//Dyc6awBexBtR0GoFwxdIK6IxOu"><link rel="preload" href="/wasm_test-8db9ecc9107ee19e_bg.wasm" crossorigin=anonymous integrity="sha384-qqOdN9F/jqTtVopcCQaGleMN8vzHpmuL2a8UCMrDt3+0GRnEU32z8axvoSCsNQH2" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
