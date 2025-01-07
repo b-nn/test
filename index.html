@@ -11,7 +11,7 @@
 
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
-<script type="module" nonce="BHTQXwynt2OP/9OJ08Xbvw==">
+<script type="module" nonce="N/8x4/HJNUr0d0pTCKUbQQ==">
 import init, * as bindings from '/eframe_template.js';
 const wasm = await init({ module_or_path: '/eframe_template_bg.wasm' });
 
@@ -127,20 +127,13 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             }
         }
     </style>
-<link rel="modulepreload" href="/eframe_template.js" crossorigin=anonymous integrity="sha384-/uFSu/DeFn0iBeSKlrsb4wP2E1jr7tROnTdYdRLajx0mOnjnNN2vfoEjEnUoUivt"><link rel="preload" href="/eframe_template_bg.wasm" crossorigin=anonymous integrity="sha384-kYETZ/oB13tM0WFYuEWOm0YK7LMzoRS3eEe1zTCKc+m8hCBca2id8ADsXMipjawm" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/eframe_template.js" crossorigin=anonymous integrity="sha384-/mqIANngSxvvNphFxUoqOjte/Sr8jbVtGCAUqw5eo4XtQrzqtmqy6oN3YBsJORMR"><link rel="preload" href="/eframe_template_bg.wasm" crossorigin=anonymous integrity="sha384-AHM+sCXlvruKVMeGjQ6skq1wksT6clFvoGeBtPULYWc59H37Eju3JHG9xsMSs1cz" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
     <!-- the id is hardcoded in main.rs . so, make sure both match. -->
     <canvas id="the_canvas_id"></canvas>
 
-    <!-- the loading spinner will be removed in main.rs -->
-    <div class="centered" id="loading_text">
-        <p style="font-size:16px">
-            Loading…
-        </p>
-        <div class="lds-dual-ring"></div>
-    </div>
 
     <!--Register Service Worker. this will cache the wasm / js scripts for offline use (for PWA functionality). -->
     <!-- Force refresh (Ctrl + F5) to load the latest files instead of cached files  -->
